@@ -2,7 +2,7 @@ import React from "react";
 
 function UrlInput({ url, setUrl, fetchData }) {
   return (
-    <div>
+    <div className="">
       <div className="input-group">
         <input
           type="url"

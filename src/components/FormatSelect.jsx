@@ -2,9 +2,9 @@ import React from "react";
 
 function FormatSelect({ setSelectedFormat }) {
   return (
-    <div>
+    <div className="formatSelector">
       <div className="row">
-        <label className="col" htmlFor="select">
+        <label className="col-8" htmlFor="select">
           Chose the format
         </label>
         <select

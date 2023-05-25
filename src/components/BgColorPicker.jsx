@@ -3,7 +3,7 @@ import React from "react";
 function BgColorPicker({ setBgColor }) {
   return (
     <div className="row ">
-      <label className="col">Chose background color: </label>
+      <label className="col-9">Chose background color: </label>
       <input
         type="color"
         className="col colorPicker form-control form-control-color"

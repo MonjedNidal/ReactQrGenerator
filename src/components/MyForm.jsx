@@ -42,12 +42,12 @@ function MyForm() {
   }
   return (
     <div>
-      <form className="d-flex flex-column">
-        <FormatSelect setSelectedFormat={setSelectedFormat} />
-        <BgColorPicker setBgColor={setBgColor} />
-        <UrlInput url={url} setUrl={setUrl} fetchData={fetchData} />
-        {qrImg && <img src={`${qrImg}`} alt="result" />}
-      </form>
+      <FormatSelect setSelectedFormat={setSelectedFormat} />
+      <BgColorPicker setBgColor={setBgColor} />
+      <UrlInput url={url} setUrl={setUrl} fetchData={fetchData} />
+      <div className="row resImg">
+        {qrImg && <img className="p-2" src={`${qrImg}`} alt="result" />}
+      </div>
     </div>
   );
 }

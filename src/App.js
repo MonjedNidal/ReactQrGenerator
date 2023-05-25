@@ -5,7 +5,7 @@ import MyForm from "./components/MyForm";
 
 function App() {
   return (
-    <div className="App container">
+    <div className="App">
       {/* <h2 className="h2">Monjed's Qr Generator</h2> */}
       <body className="justify-content-center align-items-center">
         <MyForm />
