@@ -1,6 +1,6 @@
 import React from "react";
 
-function UrlInput({ url, setUrl, fetchData }) {
+function UrlInput({ url, setUrl, fetchData, imageRef }) {
   return (
     <div className="">
       <div className="input-group inputGroup">
@@ -20,6 +20,7 @@ function UrlInput({ url, setUrl, fetchData }) {
           onClick={(e) => {
             if (url !== "" && url !== null) {
               fetchData();
+              imageRef.current.scrollIntoView({ behavior: "smooth" });
             }
           }}
         >

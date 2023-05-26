@@ -1,7 +1,9 @@
 .App {
   /* text-align: center; */
   /* overflow: hidden; */
-  height:100vh;
+  /* height:100vh; */
+  height:140vh;
+  width: 100%;
   font-weight: 600;
   font-size: large;
   color: black;
@@ -10,6 +12,10 @@
   background-size:cover;
   background-position: center center;
 
+}
+
+html{
+  /* height:100%; */
 }
 
 .container{
@@ -51,23 +57,20 @@ footer{
   font-size: medium;
 }
 
-<<<<<<< HEAD
 img{
   margin-top: 1rem;
-=======
+}
+.footerLink :hover{
+  color: #005f73;
+}
 .footerLink{
   text-decoration: none;
   color: #000;
 
 }
-.footerLink :hover{
-  color: #005f73;
-}
 img{
-  /* align-self:; */
   width: 20rem;
   height: 20rem;
   transition: all 1s ease-in-out;
->>>>>>> 640bd57f531310eb8f69b22483ffc8f1f72d9be4
   border-radius: 7px;
 }

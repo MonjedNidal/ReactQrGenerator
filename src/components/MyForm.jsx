@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import FormatSelect from "./FormatSelect";
 import BgColorPicker from "./BgColorPicker";
 import UrlInput from "./UrlInput";
@@ -8,6 +8,7 @@ function MyForm() {
   const [url, setUrl] = useState("");
   const [bgColor, setBgColor] = useState("");
   const [selectedFormat, setSelectedFormat] = useState("png");
+  const imageRef = useRef("");
   async function fetchData() {
     try {
       await axios
@@ -48,16 +49,18 @@ function MyForm() {
         setSelectedFormat={setSelectedFormat}
       />
       <BgColorPicker setBgColor={setBgColor} />
-      <UrlInput url={url} setUrl={setUrl} fetchData={fetchData} />
-<<<<<<< HEAD
-      {qrImg && (
-        <img className="d-flex flex-column" src={`${qrImg}`} alt="result" />
-      )}
-=======
+      <UrlInput
+        imageRef={imageRef}
+        url={url}
+        setUrl={setUrl}
+        fetchData={fetchData}
+      />
+
       <div className="d-flex justify-content-center">
-        {qrImg && <img className="p-2" src={`${qrImg}`} alt="result" />}
+        {qrImg && (
+          <img ref={imageRef} className="p-2" src={`${qrImg}`} alt="result" />
+        )}
       </div>
->>>>>>> 640bd57f531310eb8f69b22483ffc8f1f72d9be4
     </div>
   );
 }
