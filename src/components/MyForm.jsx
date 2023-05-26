@@ -46,9 +46,9 @@ function MyForm() {
       <FormatSelect setSelectedFormat={setSelectedFormat} />
       <BgColorPicker setBgColor={setBgColor} />
       <UrlInput url={url} setUrl={setUrl} fetchData={fetchData} />
-      <div className="row resImg">
-        {qrImg && <img className="p-2" src={`${qrImg}`} alt="result" />}
-      </div>
+      {qrImg && (
+        <img className="d-flex flex-column" src={`${qrImg}`} alt="result" />
+      )}
     </div>
   );
 }
