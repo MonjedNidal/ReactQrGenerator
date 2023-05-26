@@ -1,4 +1,3 @@
-import React from "react";
 import axios from "axios";
 import { useState } from "react";
 import FormatSelect from "./FormatSelect";
@@ -42,13 +41,23 @@ function MyForm() {
     }
   }
   return (
-    <div>
-      <FormatSelect setSelectedFormat={setSelectedFormat} />
+    <div className="myForm">
+      <FormatSelect
+        qrImg={qrImg}
+        fetchData={fetchData}
+        setSelectedFormat={setSelectedFormat}
+      />
       <BgColorPicker setBgColor={setBgColor} />
       <UrlInput url={url} setUrl={setUrl} fetchData={fetchData} />
+<<<<<<< HEAD
       {qrImg && (
         <img className="d-flex flex-column" src={`${qrImg}`} alt="result" />
       )}
+=======
+      <div className="d-flex justify-content-center">
+        {qrImg && <img className="p-2" src={`${qrImg}`} alt="result" />}
+      </div>
+>>>>>>> 640bd57f531310eb8f69b22483ffc8f1f72d9be4
     </div>
   );
 }

@@ -1,39 +1,73 @@
-@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+.App {
+  /* text-align: center; */
+  /* overflow: hidden; */
+  height:100vh;
+  font-weight: 600;
+  font-size: large;
+  color: black;
+  background-image: url('./assets/background.svg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center center;
 
-html{
-  overflow:hidden;
 }
-*{
-  /* border: 1px solid red; */
+
+.container{
+  width: auto;
 }
-body {
+
+.test{
+  width: 30rem;
+  margin: auto;
+  margin-top: 30vh;
+}
+.row {
+  --bs-gutter-x:0px;
+}
+
+.inputGroup{
+  margin-bottom: .8rem;
+}
+
+.btn{
+  color: #000;
+  --bs-btn-border-color:#ffffff !important;
+--bs-btn-text-color:#000000;
+--bs-btn-font-weight:500;
+}
+
+footer{
   text-align: center;
-  height: 100vh;
-}
-.h2{
-  /* padding:1rem; */
-}
-body {
- /* top:50%; */
- display: flex;
- justify-content: center;
-  /* left:50%;   */
-  /* margin: auto; */
-  /* transform:translate(50,-50); */
-}
-.input-group{
-  padding-top: 1rem;
+  height: 2rem;
+  background-color: #0a9396;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
-.formatSelector{
-  margin-bottom: 1rem;
+.footerText{
+  margin-top: .2rem;
+  font-size: medium;
 }
-.colorPicker{
-  /* margin-left: 6rem; */
-} 
 
+<<<<<<< HEAD
 img{
   margin-top: 1rem;
+=======
+.footerLink{
+  text-decoration: none;
+  color: #000;
+
+}
+.footerLink :hover{
+  color: #005f73;
+}
+img{
+  /* align-self:; */
+  width: 20rem;
+  height: 20rem;
+  transition: all 1s ease-in-out;
+>>>>>>> 640bd57f531310eb8f69b22483ffc8f1f72d9be4
   border-radius: 7px;
-  /* width: 16rem; */
 }
