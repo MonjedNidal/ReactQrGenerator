@@ -17,9 +17,9 @@ function UrlInput({ url, setUrl, fetchData, imageRef }) {
           className="btn"
           type="button"
           id="button-addon2"
-          onClick={(e) => {
+          onClick={async (e) => {
             if (url !== "" && url !== null) {
-              fetchData();
+              await fetchData();
               imageRef.current.scrollIntoView({ behavior: "smooth" });
             }
           }}

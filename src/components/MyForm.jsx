@@ -56,10 +56,8 @@ function MyForm() {
         fetchData={fetchData}
       />
 
-      <div className="d-flex justify-content-center">
-        {qrImg && (
-          <img ref={imageRef} className="p-2" src={`${qrImg}`} alt="result" />
-        )}
+      <div ref={imageRef} className="d-flex justify-content-center">
+        {qrImg && <img className="p-2" src={`${qrImg}`} alt="result" />}
       </div>
     </div>
   );
