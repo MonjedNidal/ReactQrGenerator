@@ -1,9 +1,9 @@
 import React from "react";
 
-function FormatSelect({ setSelectedFormat }) {
+function FormatSelect({ setSelectedFormat, qrImg, fetchData }) {
   return (
     <div className="formatSelector">
-      <div className="row">
+      <div className="row inputGroup">
         <label className="col-8" htmlFor="select">
           Chose the format
         </label>
@@ -16,11 +16,11 @@ function FormatSelect({ setSelectedFormat }) {
           }}
         >
           <option selected value="png">
-            .png
+            png
           </option>
-          <option value="jpg">.jpg</option>
-          <option value="jpeg">.jpeg</option>
-          <option value="svg">.svg</option>
+          <option value="jpg">jpg</option>
+          <option value="jpeg">jpeg</option>
+          <option value="svg">svg</option>
         </select>
       </div>
     </div>

@@ -41,11 +41,15 @@ function MyForm() {
     }
   }
   return (
-    <div>
-      <FormatSelect setSelectedFormat={setSelectedFormat} />
+    <div className="myForm">
+      <FormatSelect
+        qrImg={qrImg}
+        fetchData={fetchData}
+        setSelectedFormat={setSelectedFormat}
+      />
       <BgColorPicker setBgColor={setBgColor} />
       <UrlInput url={url} setUrl={setUrl} fetchData={fetchData} />
-      <div className="row resImg">
+      <div className="d-flex justify-content-center">
         {qrImg && <img className="p-2" src={`${qrImg}`} alt="result" />}
       </div>
     </div>

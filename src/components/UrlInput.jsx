@@ -3,7 +3,7 @@ import React from "react";
 function UrlInput({ url, setUrl, fetchData }) {
   return (
     <div className="">
-      <div className="input-group">
+      <div className="input-group inputGroup">
         <input
           type="url"
           className="form-control"
@@ -14,7 +14,7 @@ function UrlInput({ url, setUrl, fetchData }) {
           }}
         />
         <button
-          className="btn btn-outline-secondary"
+          className="btn"
           type="button"
           id="button-addon2"
           onClick={(e) => {

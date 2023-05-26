@@ -1,15 +1,18 @@
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import "./App.css";
+import MyNavbar from "./components/MyNavbar";
 import MyForm from "./components/MyForm";
-
+import MyFooter from "./components/MyFooter";
 function App() {
   return (
     <div className="App">
-      {/* <h2 className="h2">Monjed's Qr Generator</h2> */}
-      <body className="justify-content-center align-items-center">
+      <MyNavbar />
+      <div className=" test">
         <MyForm />
-      </body>
+      </div>
+
+      <MyFooter />
     </div>
   );
 }
